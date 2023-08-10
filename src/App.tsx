@@ -1,23 +1,21 @@
+import { ThemeProvider } from 'styled-components'
 import Header from './components/Cabecalho'
 import Hero from './components/Hero'
 import ListaVagas from './containers/ListaVagas'
-import EstiloGlobal, { Container } from './containers/styles'
 
-//import Hero from './components/Hero'
-//import ListaVagas from './containers/ListaVagas'
-
-//import './global.css'
+import EstiloGlobal, { Container } from './styles'
+import corPadrao from './Cores/coresdapagina'
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={corPadrao}>
       <EstiloGlobal />
+      <Header />
+      <Hero />
       <Container>
-        <Header />
-        <Hero />
         <ListaVagas />
       </Container>
-    </>
+    </ThemeProvider>
   )
 }
 

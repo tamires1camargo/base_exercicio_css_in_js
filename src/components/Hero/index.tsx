@@ -1,5 +1,6 @@
-import { Container } from '../../containers/styles'
-import { HeroForm, HeroTitle } from './styles'
+import { FormContainer, Formulario, HeroTitle } from './styles'
+
+//import styles from './Hero.module.css'
 
 export type Props = {
   children: string
@@ -7,15 +8,14 @@ export type Props = {
   h2: string
 }
 
-//import styles from './Hero.module.css'
-
 const Hero = () => (
-  <HeroForm>
-    <Container>
-      <HeroTitle h2="48px">
+  <Formulario>
+    <FormContainer>
+      <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
       </HeroTitle>
-    </Container>
-  </HeroForm>
+    </FormContainer>
+  </Formulario>
 )
+
 export default Hero

@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 
 //import styles from './Cabecalho.module.css'
-type CabecalhoEditProps = {
-  fontSize?: string
-}
 
-const CabecalhoEdit = styled.header<CabecalhoEditProps>`
+const CabecalhoEdit = styled.header`
   background-color: #f9f5e7;
   color: #a7727d;
   text-align: center;
@@ -14,7 +11,7 @@ const CabecalhoEdit = styled.header<CabecalhoEditProps>`
 function Header() {
   return (
     <>
-      <CabecalhoEdit fontSize="32px">EBAC Jobs</CabecalhoEdit>
+      <CabecalhoEdit>EBAC Jobs</CabecalhoEdit>
     </>
   )
 }
